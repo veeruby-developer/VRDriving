@@ -26,7 +26,7 @@ public class VRController : MonoBehaviour
         ////    controller.Jump();
         ////}
 
-        if (OVRInput.Get(OVRInput.Button.SecondaryIndexTrigger) && allowDoubleXSpeed)
+        if (OVRInput.Get(OVRInput.Button.PrimaryIndexTrigger) && allowDoubleXSpeed)
         {
             controller.SetMoveScaleMultiplier(moveSpeedMultiplier * 2.0f);
         }
@@ -35,5 +35,5 @@ public class VRController : MonoBehaviour
             controller.SetMoveScaleMultiplier(moveSpeedMultiplier);
         }
     }
-}
+} 
 
